@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  margin-bottom: 0;
+  margin-top: 3.5rem;
+}
+
+p {
+  margin: 0;
+  padding: 2rem;
+}
+
+body {
+  color: #742305;
+  margin: 2rem 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.responsive-article {
+  display: flex;
+  flex-direction: column;
+  background-color: #fef7e2;
+  border-radius: 50px;
+}
+
+img {
+  width: 100%;
+  padding: 2rem;
+  padding-top: 0;
+  order: 3;
+}
+
+@media screen and (min-width: 1200px) {
+  .responsive-article {
+    flex-direction: row;
+    height: 500px;
+  }
+  img {
+    width: 40rem;
+    order: -1;
+    padding-top: 2rem;
+    object-fit: none;
+  }
+}
